@@ -16,8 +16,9 @@ Step 5:Iterate through each word in the tokenized text.<br>
 •	For each verb , iterate through its synsets (sets of synonyms) using wordnet.synsets(word).<br>
 •	Extract synonyms and antonyms using lemma.name() and lemma.antonyms()[0].name() respectively.<br>
 •	Print the unique sets of synonyms and antonyms.
+```
 Program:
-
+```
 import nltk
 from nltk.corpus import wordnet
 
@@ -45,7 +46,7 @@ sentences = nltk.sent_tokenize(text)
 for sentence in sentences:
     # Tokenize each sentence into words
     words = nltk.word_tokenize(sentence)
-
+```
     # Perform part-of-speech tagging
     pos_tags = nltk.pos_tag(words)
     for word, tag in pos_tags:
