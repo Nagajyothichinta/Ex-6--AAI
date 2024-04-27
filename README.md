@@ -1,23 +1,28 @@
-<H3>ENTER YOUR NAME:Ch.Nagajyothi</H3>
-<H3>ENTER YOUR REGISTER NO:212221230015</H3>
-<H3>EX. NO.6</H3>
-<H3>DATE:</H3>
-<H1 ALIGN =CENTER>Implementation of Semantic ANalysis</H1>
-<H3>Aim: to perform Parts of speech identification and Synonym using Natural Language Processing (NLP) techniques. </H3> 
- <BR>
-<h3>Algorithm:</h3>
-Step 1: Import the nltk library.<br>
-Step 2: Download the 'punkt', 'wordnet', and 'averaged_perceptron_tagger' resources.<br>
-Step 3:Accept user input for the text.<br>
-Step 4:Tokenize the input text into words using the word_tokenize function.<br>
-Step 5:Iterate through each word in the tokenized text.<br>
+### ENTER YOUR NAME:Ch.Nagajyothi
+### ENTER YOUR REGISTER NO. 212221230015
+### EX. NO.6
+### DATE:
+## Implementation of Semantic ANalysis
+## Aim: 
+To perform Parts of speech identification and Synonym using Natural Language Processing (NLP) techniques. 
+ 
+## Algorithm:
+### Step 1:
+Import the nltk library.<br>
+### Step 2: 
+Download the 'punkt', 'wordnet', and 'averaged_perceptron_tagger' resources.<br>
+### Step 3:
+Accept user input for the text.<br>
+### Step 4:
+Tokenize the input text into words using the word_tokenize function.<br>
+### Step 5:
+Iterate through each word in the tokenized text.<br>
 •	Perform part-of-speech tagging on the tokenized words using nltk.pos_tag.<br>
 •	Print each word along with its corresponding part-of-speech tag.<br>
 •	For each verb , iterate through its synsets (sets of synonyms) using wordnet.synsets(word).<br>
 •	Extract synonyms and antonyms using lemma.name() and lemma.antonyms()[0].name() respectively.<br>
 •	Print the unique sets of synonyms and antonyms.
-```
-Program:
+## Program:
 ```
 import nltk
 from nltk.corpus import wordnet
@@ -46,7 +51,7 @@ sentences = nltk.sent_tokenize(text)
 for sentence in sentences:
     # Tokenize each sentence into words
     words = nltk.word_tokenize(sentence)
-```
+
     # Perform part-of-speech tagging
     pos_tags = nltk.pos_tag(words)
     for word, tag in pos_tags:
@@ -70,18 +75,16 @@ for sentence in sentences:
         synonyms = get_synonyms(verb)
         print(f"Verb: {verb}")
         print(f"Synonyms: {', '.join(synonyms)}\n")
+```
+
+## Output:
+
+![image](https://github.com/Nagajyothichinta/Ex-6--AAI/assets/94191344/774e9361-d7ab-404b-a48f-9f0c0721b369)
+
+![image](https://github.com/Nagajyothichinta/Ex-6--AAI/assets/94191344/0e89b5ec-5cb4-4a28-98da-b606a59caae1)
+
+![image](https://github.com/Nagajyothichinta/Ex-6--AAI/assets/94191344/6d4ce28e-de62-40fa-9200-5e15f2573fa8)
 
 
-Output:
-
-![image](https://github.com/Nagajyothichinta/Ex-6--AAI/assets/94191344/c08e6bbb-5149-4777-a46c-384f5910cd53)
-
-![image](https://github.com/Nagajyothichinta/Ex-6--AAI/assets/94191344/71ead3e5-e0bf-4d85-990b-3493bda7ce58)
-
-![image](https://github.com/Nagajyothichinta/Ex-6--AAI/assets/94191344/ba9e2d7f-5cff-4905-84ee-f5abeea98ddc)
-
-
-
-
-Result:
+## Result:
 Thus ,the program to perform the Parts of Speech identification and Synonymis executed sucessfully.
